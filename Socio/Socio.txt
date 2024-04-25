@@ -1,0 +1,3 @@
+B;37.603.955/0001-43;08/05/2024;Socio Teste;CPF;6045317963;04.035-001;Rua;Domingos de Morais;2781;CONJ 1512 E 1513;Vila Mariana;SP;3550308;49;33333333;1;50;500;;;
+#Identificador;CodigoContador
+F;999

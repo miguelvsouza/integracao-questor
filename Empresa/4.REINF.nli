@@ -1,0 +1,90 @@
+object TnItemImportacao
+  Delimitador = #0
+  DMClassName = 'TnGemDMHistoricoEmpresa'
+  EhVariavel = True
+  NaoIgnorarLookup = False
+  Separador = ';'
+  SeparadorDecimal = ','
+  SohExportarSeTiverDetalhe = False
+  TamanhoRegistro = 205
+  Indice = 'CODIGOEMPRESA;CODIGOESTAB;SEQ'
+  object TnCursorLayoutField
+    FieldName = 'CODIGOEMPRESA'
+    PosicaoInicio = 2
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 2
+    Tipo = itMaster
+    ValorFixo = 'Empresa.CODIGOEMPRESA'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOESTAB'
+    PosicaoInicio = 7
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 3
+    Tipo = itMaster
+    ValorFixo = 'ESTAB.CODIGOESTAB'
+  end
+  object TnCursorLayoutField
+    FieldName = 'SEQ'
+    PosicaoInicio = 12
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 4
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DATAEVENTO'
+    PosicaoInicio = 22
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 3
+    Tipo = itCampo
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOEVENTO'
+    PosicaoInicio = 32
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 6
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'MOTIVO'
+    PosicaoInicio = 37
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 7
+    Tipo = itValorFixo
+    ValorFixo = '4'
+  end
+  object TnCursorLayoutField
+    FieldName = 'ANOTACOES'
+    PosicaoInicio = 42
+    Tamanho = 140
+    Precisao = 0
+    Coluna = 8
+    Tipo = itValorFixo
+    ValorFixo = 'REINF'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOUSUARIO'
+    PosicaoInicio = 182
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 9
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DATAHORALCTO'
+    PosicaoInicio = 187
+    Tamanho = 19
+    Precisao = 0
+    Coluna = 10
+    Tipo = itIgnorar
+  end
+end

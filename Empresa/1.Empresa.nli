@@ -1,0 +1,43 @@
+object TnItemImportacao
+  Delimitador = #0
+  DMClassName = 'TnGemDMEmpresa'
+  EhVariavel = True
+  NaoIgnorarLookup = False
+  Separador = ';'
+  SeparadorDecimal = #0
+  SohExportarSeTiverDetalhe = False
+  TamanhoRegistro = 106
+  Indice = 'CODIGOEMPRESA'
+  object TnCursorLayoutField
+    FieldName = 'CODIGOEMPRESA'
+    PosicaoInicio = 2
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 2
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'NOMEEMPRESA'
+    PosicaoInicio = 7
+    Tamanho = 100
+    Precisao = 0
+    Coluna = 1
+    Tipo = itCampo
+  end
+  object TnCursorLayoutField
+    FieldName = 'LOGOTIPOEMPRESA'
+    PosicaoInicio = 107
+    Tamanho = 0
+    Precisao = 0
+    Coluna = 4
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'MARCADAGUAEMPRESA'
+    PosicaoInicio = 107
+    Tamanho = 0
+    Precisao = 0
+    Coluna = 5
+    Tipo = itIgnorar
+  end
+end

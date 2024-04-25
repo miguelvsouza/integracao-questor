@@ -1,0 +1,9 @@
+#Identificador;razao_social;data_abertura;cnpj;natureza_juridica;cnae;cep;tipo_logradouro;logradouro;numero;complemento;bairro;cidade_ibge_rais;nome;uf;Apelido Estab;DDD;Telefone;Numero Junta Comercial;Valor Nominal da Cota;Capital Social
+A;CLINICA MAGNANI & PREVIATTI SERVICOS MEDICOS LTDA;08/05/2024;37.603.955/0001-43;2240;4930-2/02;04.035-001;Rua;Domingos de Morais;2781;CONJ 1512 E 1513;Vila Mariana;3550308;Sao Paulo;SP;Matriz;49;33333333;5555555555;1;10000
+#Identificador;Data REINF;;;;;;;;;;;;;;;;;;;
+C;23/04/2024;;;;;;;;;;;;;;;;;;;
+#Identificador;Data do Historico;razao_social;cnpj;tipo_logradouro;logradouro;numero;complemento;bairro;uf;cidade_ibge_rais;cep;natureza_juridica;Numero Junta Comercial;;;;;;;
+D;08/06/2024;CLINICA MAGNANI & PREVIATTI SERVICOS MEDICOS LTDA;37.603.955/0001-43;Rua;Domingos de Morais;2781;CONJ 1512 E 1513;Vila Mariana;SP;3550308;04.035-001;4930-2/02;2240;999999;;;;;;;
+#Identificador;cnae;Inicio da Atividade;;;;;;;;;;;;;;;;;;
+E;4930-2/02;09/05/2024;;;;;;;;;;;;;;;;;;
+

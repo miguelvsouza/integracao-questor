@@ -1,0 +1,181 @@
+object TnItemImportacao
+  Delimitador = #0
+  DMClassName = 'TnGemDMCfgEmpresaGem'
+  EhVariavel = True
+  NaoIgnorarLookup = False
+  Separador = ';'
+  SeparadorDecimal = ','
+  SohExportarSeTiverDetalhe = False
+  TamanhoRegistro = 114
+  Indice = 'CODIGOEMPRESA'
+  object TnCursorLayoutField
+    FieldName = 'CODIGOEMPRESA'
+    PosicaoInicio = 2
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 1
+    Tipo = itMaster
+    ValorFixo = 'SOCIO.CODIGOEMPRESA'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CONTADORRESPCNPJ'
+    PosicaoInicio = 7
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 1
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CONTADORRESPPREENCHFEDERAL'
+    PosicaoInicio = 12
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 4
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'SOCIORESPCNPJ'
+    PosicaoInicio = 17
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 5
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOENQUAD'
+    PosicaoInicio = 22
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 6
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DESCRLIVRO'
+    PosicaoInicio = 24
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 7
+    Tipo = itValorFixo
+    ValorFixo = 'Livro'
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOASSINATURA'
+    PosicaoInicio = 34
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 8
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'INICIOFOLHALIVRO'
+    PosicaoInicio = 36
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 9
+    Tipo = itValorFixo
+    ValorFixo = '2'
+  end
+  object TnCursorLayoutField
+    FieldName = 'LIMITEFOLHALIVRO'
+    PosicaoInicio = 41
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 10
+    Tipo = itValorFixo
+    ValorFixo = '500'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DESCRFOLHALIVRO'
+    PosicaoInicio = 46
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 11
+    Tipo = itValorFixo
+    ValorFixo = 'Folha'
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOINFCABECALHO'
+    PosicaoInicio = 56
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 12
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'USAGRUPESSOAPADRAO'
+    PosicaoInicio = 58
+    Tamanho = 1
+    Precisao = 0
+    Coluna = 13
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'USAPESSOACONTACTBAUTO'
+    PosicaoInicio = 59
+    Tamanho = 1
+    Precisao = 0
+    Coluna = 14
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'MASCGRUPOPRODUTO'
+    PosicaoInicio = 60
+    Tamanho = 30
+    Precisao = 0
+    Coluna = 15
+    Tipo = itValorFixo
+    ValorFixo = '99.999'
+  end
+  object TnCursorLayoutField
+    FieldName = 'USAREFERENCIAPROD'
+    PosicaoInicio = 90
+    Tamanho = 1
+    Precisao = 0
+    Coluna = 16
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'LIVROMODELO7'
+    PosicaoInicio = 91
+    Tamanho = 1
+    Precisao = 0
+    Coluna = 17
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'MASCCLASSIFFISCALPROD'
+    PosicaoInicio = 92
+    Tamanho = 12
+    Precisao = 0
+    Coluna = 18
+    Tipo = itValorFixo
+    ValorFixo = '9999.99.99'
+  end
+  object TnCursorLayoutField
+    FieldName = 'USALINHAASSINATURA'
+    PosicaoInicio = 104
+    Tamanho = 1
+    Precisao = 0
+    Coluna = 19
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DATAHISTORICO'
+    PosicaoInicio = 105
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 20
+    Tipo = itIgnorar
+  end
+end
