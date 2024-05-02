@@ -4,21 +4,22 @@ SELECT
     c.nome,
     c.cpf,
     CASE
-        ce.responsavel_legal
-        WHEN true THEN 1
+        WHEN ce.responsavel_legal THEN 1
         ELSE 0
     END AS responsavel_legal,
     u.email,
-    en.cep,
-    -- replace para incluir o formato: 00.000-000
-    en.tipo_logradouro,
-    en.logradouro,
+    CONCAT(
+        SUBSTRING(en.cep, 1, 2),
+        '.',
+        SUBSTRING(en.cep, 3)
+    ) AS cep_formatado,
+    UNACCENT(en.tipo_logradouro) AS tipo_logradouro_sem_acentos,
+    UNACCENT(en.logradouro) AS logradouro_sem_acentos,
     en.numero,
-    en.complemento,
-    en.bairro,
-    -- replace em caracteres especiais
+    UNACCENT(en.complemento) AS complemento_sem_acentos,
+    UNACCENT(en.bairro) AS bairro_sem_acentos,
     cid.id AS cidade_ibge,
-    cid.nome AS cidade_nome,
+    UNACCENT(cid.nome) AS cidade_nome_sem_acentos,
     cid.uf
 FROM
     clientes c
@@ -28,7 +29,18 @@ FROM
     LEFT JOIN cidades cid ON en.cidade_id = cid.id
     LEFT JOIN usuarios u ON c.usuario_id = u.id
 WHERE
-    e.id = 1 -- Remover o filtro de empresa em produção
+    e.cnpj IN (
+        '54.755.630/0001-03',
+        '54.904.096/0001-41',
+        '54.953.991/0001-56',
+        '54.728.925/0001-82',
+        '49.159.447/0001-05',
+        '54.953.818/0001-58',
+        '54.948.342/0001-67',
+        '54.713.651/0001-58',
+        '54.871.153/0001-33',
+        '54.867.117/0001-04'
+    )
     AND e.deleted_at IS NULL
     AND ce.deleted_at IS NULL
     AND c.deleted_at IS NULL
