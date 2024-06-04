@@ -1,0 +1,153 @@
+object TnItemImportacao
+  Delimitador = #0
+  DMClassName = 'TnFpaDMOrganograma'
+  EhVariavel = True
+  NaoIgnorarLookup = False
+  Separador = ';'
+  SeparadorDecimal = ','
+  SohExportarSeTiverDetalhe = False
+  TamanhoRegistro = 137
+  Indice = 'CODIGOEMPRESA;CODIGOESTAB;CLASSIFORGAN'
+  object TnCursorLayoutField
+    FieldName = 'CODIGOEMPRESA'
+    PosicaoInicio = 2
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 3
+    Tipo = itEventoPreDefinido
+    ValorFixo = 'PegarCampoTabela;CODIGOEMPRESA;ESTAB;INSCRFEDERAL'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOESTAB'
+    PosicaoInicio = 7
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 3
+    Tipo = itEventoPreDefinido
+    ValorFixo = 'PegarCampoTabela;CODIGOESTAB;ESTAB;INSCRFEDERAL'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CLASSIFORGAN'
+    PosicaoInicio = 12
+    Tamanho = 20
+    Precisao = 0
+    Coluna = 4
+    Tipo = itValorFixo
+    ValorFixo = '001'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DESCRORGAN'
+    PosicaoInicio = 32
+    Tamanho = 30
+    Precisao = 0
+    Coluna = 5
+    Tipo = itValorFixo
+    ValorFixo = 'Geral'
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOCONTA'
+    PosicaoInicio = 62
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 6
+    Tipo = itValorFixo
+    ValorFixo = '2'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CENTRAL'
+    PosicaoInicio = 64
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 7
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOTABGPS'
+    PosicaoInicio = 66
+    Tamanho = 3
+    Precisao = 0
+    Coluna = 8
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOEMPRESACENTR'
+    PosicaoInicio = 69
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 9
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOESTABCENTR'
+    PosicaoInicio = 74
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 10
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CLASSIFORGANCENTR'
+    PosicaoInicio = 79
+    Tamanho = 20
+    Precisao = 0
+    Coluna = 11
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'ITEMESTAT'
+    PosicaoInicio = 99
+    Tamanho = 20
+    Precisao = 0
+    Coluna = 12
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'DIAPGTOMENSAL'
+    PosicaoInicio = 119
+    Tamanho = 3
+    Precisao = 0
+    Coluna = 13
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'DIAPGTOADTOSAL'
+    PosicaoInicio = 122
+    Tamanho = 3
+    Precisao = 0
+    Coluna = 14
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'DIAPGTO13ADTO'
+    PosicaoInicio = 125
+    Tamanho = 3
+    Precisao = 0
+    Coluna = 15
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'ATIVIDADESIMPLES'
+    PosicaoInicio = 128
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 16
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOSELECAO'
+    PosicaoInicio = 130
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 17
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'DIAPGTO13INTEG'
+    PosicaoInicio = 135
+    Tamanho = 3
+    Precisao = 0
+    Coluna = 18
+    Tipo = itIgnorar
+  end
+end

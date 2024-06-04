@@ -1,0 +1,279 @@
+object TnItemImportacao
+  Delimitador = #0
+  DMClassName = 'TnFpaDMGPS'
+  EhVariavel = True
+  NaoIgnorarLookup = False
+  Separador = ';'
+  SeparadorDecimal = ','
+  SohExportarSeTiverDetalhe = False
+  TamanhoRegistro = 225
+  Indice = 'CODIGOEMPRESA;CODIGOTABGPS;DATAINICIAL'
+  object TnCursorLayoutField
+    FieldName = 'CODIGOEMPRESA'
+    PosicaoInicio = 2
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 3
+    Tipo = itMaster
+    ValorFixo = 'TabelaGPS.CODIGOEMPRESA'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOTABGPS'
+    PosicaoInicio = 7
+    Tamanho = 3
+    Precisao = 0
+    Coluna = 3
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DATAINICIAL'
+    PosicaoInicio = 10
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 4
+    Tipo = itCampo
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOIMPOSTO'
+    PosicaoInicio = 20
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 5
+    Tipo = itValorFixo
+    ValorFixo = '2003'
+  end
+  object TnCursorLayoutField
+    FieldName = 'VARIACAOIMPOSTO'
+    PosicaoInicio = 30
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 6
+    Tipo = itValorFixo
+    ValorFixo = '51'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOIMPOSTO13'
+    PosicaoInicio = 35
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 7
+    Tipo = itValorFixo
+    ValorFixo = '2003'
+  end
+  object TnCursorLayoutField
+    FieldName = 'VARIACAOIMPOSTO13'
+    PosicaoInicio = 45
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 8
+    Tipo = itValorFixo
+    ValorFixo = '52'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOIMPOSTOTERC'
+    PosicaoInicio = 50
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 9
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'VARIACAOIMPOSTOTERC'
+    PosicaoInicio = 60
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 10
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOIMPOSTOTERC13'
+    PosicaoInicio = 65
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 11
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'VARIACAOIMPOSTOTERC13'
+    PosicaoInicio = 75
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 12
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOFPAS'
+    PosicaoInicio = 80
+    Tamanho = 4
+    Precisao = 0
+    Coluna = 13
+    Tipo = itValorFixo
+    ValorFixo = '515'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOACIDTRAB'
+    PosicaoInicio = 84
+    Tamanho = 8
+    Precisao = 0
+    Coluna = 14
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'TERCEIROS'
+    PosicaoInicio = 92
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 15
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'PERCPARTEEMP'
+    PosicaoInicio = 97
+    Tamanho = 7
+    Precisao = 2
+    Coluna = 16
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'PERCENTFINANC'
+    PosicaoInicio = 104
+    Tamanho = 7
+    Precisao = 2
+    Coluna = 17
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'PERCPRODRURAIS'
+    PosicaoInicio = 111
+    Tamanho = 7
+    Precisao = 2
+    Coluna = 18
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'PERCPARTESAT'
+    PosicaoInicio = 118
+    Tamanho = 7
+    Precisao = 2
+    Coluna = 19
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOPROCESSOJUDADMRAT'
+    PosicaoInicio = 125
+    Tamanho = 11
+    Precisao = 0
+    Coluna = 20
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'PERCRATCOMPROC'
+    PosicaoInicio = 136
+    Tamanho = 7
+    Precisao = 2
+    Coluna = 21
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'PERCACRESCFAP'
+    PosicaoInicio = 143
+    Tamanho = 9
+    Precisao = 4
+    Coluna = 22
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOPROCESSOJUDADMFAP'
+    PosicaoInicio = 152
+    Tamanho = 11
+    Precisao = 0
+    Coluna = 23
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'PERCFAPCOMPROC'
+    PosicaoInicio = 163
+    Tamanho = 9
+    Precisao = 4
+    Coluna = 24
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'PERCPARTETERC'
+    PosicaoInicio = 172
+    Tamanho = 7
+    Precisao = 2
+    Coluna = 25
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOPROCESSOJUDADMTER'
+    PosicaoInicio = 179
+    Tamanho = 11
+    Precisao = 0
+    Coluna = 26
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'PERCTERCOMPROC'
+    PosicaoInicio = 190
+    Tamanho = 7
+    Precisao = 2
+    Coluna = 27
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'TERCEIROSCOMPROC'
+    PosicaoInicio = 197
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 28
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'PERCDIRAUTON'
+    PosicaoInicio = 202
+    Tamanho = 7
+    Precisao = 2
+    Coluna = 29
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'PERCISENCAOFILANT'
+    PosicaoInicio = 209
+    Tamanho = 7
+    Precisao = 2
+    Coluna = 30
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'PERCCOOPTRAB'
+    PosicaoInicio = 216
+    Tamanho = 7
+    Precisao = 2
+    Coluna = 31
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOALTERACAOESOCIAL'
+    PosicaoInicio = 223
+    Tamanho = 3
+    Precisao = 0
+    Coluna = 32
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+end

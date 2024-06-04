@@ -1,0 +1,63 @@
+object TnItemImportacao
+  Delimitador = #0
+  DMClassName = 'TnGemDMOutorgado'
+  EhVariavel = True
+  NaoIgnorarLookup = True
+  Separador = ';'
+  SeparadorDecimal = #0
+  SohExportarSeTiverDetalhe = False
+  TamanhoRegistro = 86
+  Indice = 'CODIGOEMPRESA;CODIGOCERTIFICADOOUTORGA'
+  object TnCursorLayoutField
+    FieldName = 'CODIGOEMPRESA'
+    PosicaoInicio = 2
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 1
+    Tipo = itMaster
+    ValorFixo = 'EMPRESA.CODIGOEMPRESA'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOCERTIFICADOOUTORGA'
+    PosicaoInicio = 7
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 3
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'NOMEOUTORGADO'
+    PosicaoInicio = 17
+    Tamanho = 50
+    Precisao = 0
+    Coluna = 4
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'INICIOVIGENCIA'
+    PosicaoInicio = 17
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 4
+    Tipo = itCampo
+  end
+  object TnCursorLayoutField
+    FieldName = 'FINALVIGENCIA'
+    PosicaoInicio = 27
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 6
+    Tipo = itValorFixo
+    ValorFixo = '31/12/2050'
+  end
+  object TnCursorLayoutField
+    FieldName = 'GRUPOS'
+    PosicaoInicio = 37
+    Tamanho = 50
+    Precisao = 0
+    Coluna = 7
+    Tipo = itValorFixo
+    ValorFixo = '1;2;3;4;5;6;7;8;9'
+  end
+end

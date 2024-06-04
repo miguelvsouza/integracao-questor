@@ -15,7 +15,7 @@ object TnItemImportacao
     Precisao = 0
     Coluna = 1
     Tipo = itMaster
-    ValorFixo = 'SOCIO.CODIGOEMPRESA'
+    ValorFixo = 'EMPRESA.CODIGOEMPRESA'
   end
   object TnCursorLayoutField
     FieldName = 'CONTADORRESPCNPJ'

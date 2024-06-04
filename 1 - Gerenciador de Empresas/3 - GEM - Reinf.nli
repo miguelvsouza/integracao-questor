@@ -15,7 +15,7 @@ object TnItemImportacao
     Precisao = 0
     Coluna = 2
     Tipo = itMaster
-    ValorFixo = 'Empresa.CODIGOEMPRESA'
+    ValorFixo = 'EMPRESA.CODIGOEMPRESA'
   end
   object TnCursorLayoutField
     FieldName = 'CODIGOESTAB'
@@ -40,7 +40,7 @@ object TnItemImportacao
     PosicaoInicio = 22
     Tamanho = 10
     Precisao = 0
-    Coluna = 3
+    Coluna = 5
     Tipo = itCampo
   end
   object TnCursorLayoutField

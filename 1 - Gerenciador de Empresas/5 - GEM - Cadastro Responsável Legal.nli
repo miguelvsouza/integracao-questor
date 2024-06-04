@@ -14,8 +14,8 @@ object TnItemImportacao
     Tamanho = 5
     Precisao = 0
     Coluna = 1
-    Tipo = itEventoPreDefinido
-    ValorFixo = 'PESQUISARTABELA;ESTAB;INSCRFEDERAL;CODIGOEMPRESA'
+    Tipo = itMaster
+    ValorFixo = 'EMPRESA.CODIGOEMPRESA'
   end
   object TnCursorLayoutField
     FieldName = 'CODIGOSOCIO'
@@ -30,7 +30,7 @@ object TnItemImportacao
     PosicaoInicio = 12
     Tamanho = 10
     Precisao = 0
-    Coluna = 2
+    Coluna = 5
     Tipo = itCampo
   end
   object TnCursorLayoutField
@@ -38,7 +38,7 @@ object TnItemImportacao
     PosicaoInicio = 22
     Tamanho = 50
     Precisao = 0
-    Coluna = 3
+    Coluna = 16
     Tipo = itCampo
   end
   object TnCursorLayoutField
@@ -58,7 +58,7 @@ object TnItemImportacao
     PosicaoInicio = 74
     Tamanho = 18
     Precisao = 0
-    Coluna = 4
+    Coluna = 17
     Tipo = itCampo
   end
   object TnCursorLayoutField
@@ -66,7 +66,7 @@ object TnItemImportacao
     PosicaoInicio = 92
     Tamanho = 10
     Precisao = 0
-    Coluna = 7
+    Coluna = 8
     Tipo = itCampo
   end
   object TnCursorLayoutField
@@ -74,7 +74,7 @@ object TnItemImportacao
     PosicaoInicio = 102
     Tamanho = 21
     Precisao = 0
-    Coluna = 8
+    Coluna = 9
     Tipo = itLookup
     ValorFixo = 'DESCRTIPOLOGRAD'
   end
@@ -83,7 +83,7 @@ object TnItemImportacao
     PosicaoInicio = 123
     Tamanho = 40
     Precisao = 0
-    Coluna = 9
+    Coluna = 10
     Tipo = itCampo
   end
   object TnCursorLayoutField
@@ -91,7 +91,7 @@ object TnItemImportacao
     PosicaoInicio = 163
     Tamanho = 7
     Precisao = 0
-    Coluna = 10
+    Coluna = 11
     Tipo = itCampo
   end
   object TnCursorLayoutField
@@ -99,7 +99,7 @@ object TnItemImportacao
     PosicaoInicio = 170
     Tamanho = 20
     Precisao = 0
-    Coluna = 11
+    Coluna = 12
     Tipo = itCampo
   end
   object TnCursorLayoutField
@@ -107,7 +107,7 @@ object TnItemImportacao
     PosicaoInicio = 190
     Tamanho = 30
     Precisao = 0
-    Coluna = 12
+    Coluna = 13
     Tipo = itCampo
   end
   object TnCursorLayoutField
@@ -123,7 +123,7 @@ object TnItemImportacao
     PosicaoInicio = 222
     Tamanho = 8
     Precisao = 0
-    Coluna = 13
+    Coluna = 14
     Tipo = itLookup
     ValorFixo = 'CODIGORAIS'
   end
@@ -190,7 +190,7 @@ object TnItemImportacao
     PosicaoInicio = 280
     Tamanho = 100
     Precisao = 0
-    Coluna = 6
+    Coluna = 18
     Tipo = itCampo
   end
   object TnCursorLayoutField
@@ -199,7 +199,8 @@ object TnItemImportacao
     Tamanho = 1
     Precisao = 0
     Coluna = 5
-    Tipo = itCampo
+    Tipo = itValorFixo
+    ValorFixo = '1'
   end
   object TnCursorLayoutField
     FieldName = 'TIPOSOCIO'
@@ -311,7 +312,7 @@ object TnItemImportacao
     PosicaoInicio = 511
     Tamanho = 10
     Precisao = 0
-    Coluna = 2
+    Coluna = 5
     Tipo = itCampo
   end
   object TnCursorLayoutField

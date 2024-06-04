@@ -1,0 +1,37 @@
+object TnItemImportacao
+  Delimitador = #0
+  DMClassName = 'TnFpaDMTabelaGPS'
+  EhVariavel = True
+  NaoIgnorarLookup = False
+  Separador = ';'
+  SeparadorDecimal = ','
+  SohExportarSeTiverDetalhe = False
+  TamanhoRegistro = 39
+  Indice = 'CODIGOEMPRESA;CODIGOTABGPS'
+  object TnCursorLayoutField
+    FieldName = 'CODIGOEMPRESA'
+    PosicaoInicio = 2
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 3
+    Tipo = itMaster
+    ValorFixo = 'CfgEmpresaFpaOpcao.CODIGOEMPRESA'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOTABGPS'
+    PosicaoInicio = 7
+    Tamanho = 3
+    Precisao = 0
+    Coluna = 3
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'DESCRTABGPS'
+    PosicaoInicio = 10
+    Tamanho = 30
+    Precisao = 0
+    Coluna = 4
+    Tipo = itValorFixo
+    ValorFixo = 'Simples Nacional'
+  end
+end
