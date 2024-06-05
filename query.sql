@@ -1,3 +1,4 @@
+-- unaccent para evitar problemas de acentuação na importação para a Questor
 SELECT
   unaccent(e.razao_social) as razao_social,
   unaccent(e.nome_fantasia) as nome_fantasia,
@@ -20,7 +21,24 @@ SELECT
   ci.uf as uf,
   unaccent(c.nome) as nome,
   c.cpf as cpf,
-  u.email
+  u.email,
+  c.data_nascimento,
+  CASE
+    c.raca_cor
+    WHEN 1 THEN 2
+    WHEN 2 THEN 4
+    WHEN 3 THEN 6
+    WHEN 4 THEN 8
+    WHEN 5 THEN 1
+    ELSE 2
+  END AS raca_cor,
+  c.genero,
+  CASE
+    c.estado_civil
+    WHEN 3 THEN 2
+    WHEN 4 THEN 3
+    ELSE c.estado_civil
+  END AS estado_civil
 FROM
   empresas e
   LEFT JOIN enderecos en ON e.endereco_id = en.id
@@ -31,6 +49,7 @@ FROM
   LEFT JOIN usuarios u ON c.usuario_id = u.id
 WHERE
   e.id = 7
+  AND e.regime_tributario = 1 -- Somente empresas do Simples Nacional
   AND e.deleted_at IS NULL
   AND en.deleted_at IS NULL
   AND ce.deleted_at IS NULL

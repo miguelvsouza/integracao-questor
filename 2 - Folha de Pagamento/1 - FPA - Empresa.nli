@@ -22,9 +22,8 @@ object TnItemImportacao
     PosicaoInicio = 7
     Tamanho = 10
     Precisao = 0
-    Coluna = 3
-    Tipo = itValorFixo
-    ValorFixo = '01/01/1900'
+    Coluna = 4
+    Tipo = itCampo
   end
   object TnCursorLayoutField
     FieldName = 'PROCESSOCONTRISOCIALRESC'
