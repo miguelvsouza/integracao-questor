@@ -14,8 +14,8 @@ object TnItemImportacao
     Tamanho = 5
     Precisao = 0
     Coluna = 3
-    Tipo = itMaster
-    ValorFixo = 'eSocialCFG.CODIGOEMPRESA'
+    Tipo = itEventoPreDefinido
+    ValorFixo = 'PegarCampoTabela;CODIGOEMPRESA;ESTAB;INSCRFEDERAL'
   end
   object TnCursorLayoutField
     FieldName = 'CODIGOLOTACAO'
