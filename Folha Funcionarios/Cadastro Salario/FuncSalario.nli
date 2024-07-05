@@ -1,0 +1,157 @@
+object TnItemImportacao
+  Delimitador = #0
+  DMClassName = 'TnFpaDMFuncSalario'
+  EhVariavel = True
+  NaoIgnorarLookup = False
+  Separador = ';'
+  SeparadorDecimal = ','
+  SohExportarSeTiverDetalhe = False
+  TamanhoRegistro = 1166
+  Indice = 'CODIGOEMPRESA;CODIGOFUNCCONTR;DATAINICIAL;SEQ'
+  object TnCursorLayoutField
+    FieldName = 'CODIGOEMPRESA'
+    PosicaoInicio = 2
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 1
+    Tipo = itEventoPreDefinido
+    ValorFixo = 'PESQUISARTABELA;ESTAB;INSCRFEDERAL;CODIGOEMPRESA'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOFUNCCONTR'
+    PosicaoInicio = 7
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 3
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DATAINICIAL'
+    PosicaoInicio = 17
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 2
+    Tipo = itCampo
+    ValorFixo = '31/08/2023'
+  end
+  object TnCursorLayoutField
+    FieldName = 'SEQ'
+    PosicaoInicio = 27
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 5
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOESTRUTSAL'
+    PosicaoInicio = 32
+    Tamanho = 4
+    Precisao = 0
+    Coluna = 6
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOTABSAL'
+    PosicaoInicio = 36
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 7
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOMOTIVO'
+    PosicaoInicio = 46
+    Tamanho = 6
+    Precisao = 0
+    Coluna = 8
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DATAEFEITO'
+    PosicaoInicio = 52
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 9
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOSALARIO'
+    PosicaoInicio = 62
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 10
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'VALORSAL'
+    PosicaoInicio = 67
+    Tamanho = 16
+    Precisao = 2
+    Coluna = 11
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'PERCAUMENTO'
+    PosicaoInicio = 83
+    Tamanho = 20
+    Precisao = 6
+    Coluna = 12
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'COMPLSAL'
+    PosicaoInicio = 103
+    Tamanho = 18
+    Precisao = 6
+    Coluna = 13
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'ANTECSAL'
+    PosicaoInicio = 121
+    Tamanho = 18
+    Precisao = 6
+    Coluna = 14
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'SALCARNE'
+    PosicaoInicio = 139
+    Tamanho = 16
+    Precisao = 2
+    Coluna = 15
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DESCRSAL'
+    PosicaoInicio = 155
+    Tamanho = 999
+    Precisao = 0
+    Coluna = 16
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOALTERACAOESOCIAL'
+    PosicaoInicio = 1154
+    Tamanho = 3
+    Precisao = 0
+    Coluna = 17
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOSINDDISSIDIOEMP'
+    PosicaoInicio = 1157
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 18
+    Tipo = itIgnorar
+  end
+end

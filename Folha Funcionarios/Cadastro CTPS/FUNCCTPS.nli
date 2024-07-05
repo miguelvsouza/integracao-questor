@@ -1,0 +1,87 @@
+object TnItemImportacao
+  Delimitador = #0
+  DMClassName = 'TnFpaDMFUNCCTPS'
+  EhVariavel = True
+  NaoIgnorarLookup = False
+  Separador = ';'
+  SeparadorDecimal = ','
+  SohExportarSeTiverDetalhe = False
+  TamanhoRegistro = 58
+  Indice = 'CODIGOEMPRESA;CODIGOFUNCCONTR;DATAINICIAL'
+  object TnCursorLayoutField
+    FieldName = 'CODIGOEMPRESA'
+    PosicaoInicio = 2
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 1
+    Tipo = itEventoPreDefinido
+    ValorFixo = 'PESQUISARTABELA;ESTAB;INSCRFEDERAL;CODIGOEMPRESA'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOFUNCCONTR'
+    PosicaoInicio = 7
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 3
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DATAINICIAL'
+    PosicaoInicio = 17
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 2
+    Tipo = itCampo
+  end
+  object TnCursorLayoutField
+    FieldName = 'UTILIZACARTEIRADIGITAL'
+    PosicaoInicio = 27
+    Tamanho = 1
+    Precisao = 0
+    Coluna = 5
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'NUMEROCTPS'
+    PosicaoInicio = 28
+    Tamanho = 11
+    Precisao = 0
+    Coluna = 3
+    Tipo = itCampo
+  end
+  object TnCursorLayoutField
+    FieldName = 'SERIECTPS'
+    PosicaoInicio = 39
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 4
+    Tipo = itCampo
+  end
+  object TnCursorLayoutField
+    FieldName = 'SIGLAESTADOCTPS'
+    PosicaoInicio = 44
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 5
+    Tipo = itCampo
+  end
+  object TnCursorLayoutField
+    FieldName = 'EXPEDCTPS'
+    PosicaoInicio = 46
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 9
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOALTERACAOESOCIAL'
+    PosicaoInicio = 56
+    Tamanho = 3
+    Precisao = 0
+    Coluna = 10
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+end

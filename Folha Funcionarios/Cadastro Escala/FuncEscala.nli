@@ -1,0 +1,112 @@
+object TnItemImportacao
+  Delimitador = #0
+  DMClassName = 'TnFpaDMFuncEscala'
+  EhVariavel = True
+  NaoIgnorarLookup = False
+  Separador = ';'
+  SeparadorDecimal = ','
+  SohExportarSeTiverDetalhe = False
+  TamanhoRegistro = 1155
+  Indice = 'CODIGOEMPRESA;CODIGOFUNCCONTR;DATAINICIAL'
+  object TnCursorLayoutField
+    FieldName = 'CODIGOEMPRESA'
+    PosicaoInicio = 2
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 1
+    Tipo = itEventoPreDefinido
+    ValorFixo = 'PESQUISARTABELA;ESTAB;INSCRFEDERAL;CODIGOEMPRESA'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOFUNCCONTR'
+    PosicaoInicio = 7
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 3
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DATAINICIAL'
+    PosicaoInicio = 17
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 3
+    Tipo = itCampo
+    ValorFixo = '31/08/2023'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOESCALA'
+    PosicaoInicio = 27
+    Tamanho = 6
+    Precisao = 0
+    Coluna = 5
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOMOTIVO'
+    PosicaoInicio = 33
+    Tamanho = 6
+    Precisao = 0
+    Coluna = 6
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'REGIMEJOR'
+    PosicaoInicio = 39
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 7
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOJORNADA'
+    PosicaoInicio = 44
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 8
+    Tipo = itValorFixo
+    ValorFixo = '4'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DESCRTIPOJORNADA'
+    PosicaoInicio = 49
+    Tamanho = 999
+    Precisao = 0
+    Coluna = 9
+    Tipo = itValorFixo
+    ValorFixo = 
+      'segunda-feira '#224' sexta-feira das 08:00 '#224's 12:00 e das 14:00 '#224's 18' +
+      ':00 com intervalo de 02:00 hora(s) das 12:00 at'#233' 14:00 e s'#225'bado ' +
+      'das 08:00 '#224's 12:00.'
+  end
+  object TnCursorLayoutField
+    FieldName = 'TEMPOPARCIAL'
+    PosicaoInicio = 1048
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 10
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'OBSERVACAO'
+    PosicaoInicio = 1053
+    Tamanho = 100
+    Precisao = 0
+    Coluna = 11
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOALTERACAOESOCIAL'
+    PosicaoInicio = 1153
+    Tamanho = 3
+    Precisao = 0
+    Coluna = 12
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+end

@@ -1,0 +1,184 @@
+object TnItemImportacao
+  Delimitador = #0
+  DMClassName = 'TnFpaDMFuncLocal'
+  EhVariavel = True
+  NaoIgnorarLookup = False
+  Separador = ';'
+  SeparadorDecimal = ','
+  SohExportarSeTiverDetalhe = False
+  TamanhoRegistro = 138
+  Indice = 'CODIGOEMPRESA;CODIGOFUNCCONTR;DATATRANSF'
+  object TnCursorLayoutField
+    FieldName = 'CODIGOEMPRESA'
+    PosicaoInicio = 2
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 1
+    Tipo = itEventoPreDefinido
+    ValorFixo = 'PESQUISARTABELA;ESTAB;INSCRFEDERAL;CODIGOEMPRESA'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOFUNCCONTR'
+    PosicaoInicio = 7
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 3
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DATATRANSF'
+    PosicaoInicio = 17
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 2
+    Tipo = itCampo
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOESTAB'
+    PosicaoInicio = 27
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 1
+    Tipo = itEventoPreDefinido
+    ValorFixo = 'PESQUISARTABELA;ESTAB;INSCRFEDERAL;CODIGOESTAB'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CLASSIFORGAN'
+    PosicaoInicio = 32
+    Tamanho = 20
+    Precisao = 0
+    Coluna = 6
+    Tipo = itValorFixo
+    ValorFixo = '999'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOMOTIVO'
+    PosicaoInicio = 52
+    Tamanho = 6
+    Precisao = 0
+    Coluna = 7
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'LIVROREG'
+    PosicaoInicio = 58
+    Tamanho = 4
+    Precisao = 0
+    Coluna = 8
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'FOLHALIVROREG'
+    PosicaoInicio = 62
+    Tamanho = 3
+    Precisao = 0
+    Coluna = 9
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'FICHAREG'
+    PosicaoInicio = 65
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 10
+    Tipo = itValorFixo
+  end
+  object TnCursorLayoutField
+    FieldName = 'DATAHORACADAST'
+    PosicaoInicio = 75
+    Tamanho = 19
+    Precisao = 0
+    Coluna = 2
+    Tipo = itCampo
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOADMRAIS'
+    PosicaoInicio = 94
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 12
+    Tipo = itValorFixo
+    ValorFixo = '01'
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOADMCAGED'
+    PosicaoInicio = 96
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 13
+    Tipo = itValorFixo
+    ValorFixo = '10'
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOTRANSF'
+    PosicaoInicio = 98
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 14
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOAFASTSEFIP'
+    PosicaoInicio = 100
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 15
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOAFASTRAIS'
+    PosicaoInicio = 102
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 16
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOAFASTCAGED'
+    PosicaoInicio = 104
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 17
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'INDICATADM'
+    PosicaoInicio = 106
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 18
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'NUMEROPROCESSO'
+    PosicaoInicio = 111
+    Tamanho = 20
+    Precisao = 0
+    Coluna = 19
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOADM'
+    PosicaoInicio = 131
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 20
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOALTERACAOESOCIAL'
+    PosicaoInicio = 136
+    Tamanho = 3
+    Precisao = 0
+    Coluna = 21
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+end

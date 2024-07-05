@@ -1,0 +1,56 @@
+object TnItemImportacao
+  Delimitador = #0
+  DMClassName = 'TnFpaDMFuncao'
+  EhVariavel = True
+  NaoIgnorarLookup = False
+  Separador = ';'
+  SeparadorDecimal = ','
+  SohExportarSeTiverDetalhe = False
+  TamanhoRegistro = 127
+  Indice = 'CODIGOFUNCAO'
+  object TnCursorLayoutField
+    FieldName = 'CODIGOFUNCAO'
+    PosicaoInicio = 2
+    Tamanho = 7
+    Precisao = 0
+    Coluna = 2
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DATAINICIAL'
+    PosicaoInicio = 9
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 3
+    Tipo = itValorFixo
+    ValorFixo = '01/01/1990'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DESCRFUNCAO'
+    PosicaoInicio = 19
+    Tamanho = 100
+    Precisao = 0
+    Coluna = 4
+    Tipo = itValorFixo
+    ValorFixo = 'N'#227'o Informado'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CBO'
+    PosicaoInicio = 119
+    Tamanho = 6
+    Precisao = 0
+    Coluna = 5
+    Tipo = itValorFixo
+    ValorFixo = '000000'
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOALTERACAOESOCIAL'
+    PosicaoInicio = 125
+    Tamanho = 3
+    Precisao = 0
+    Coluna = 6
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+end

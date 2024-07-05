@@ -1,0 +1,119 @@
+object TnItemImportacao
+  Delimitador = #0
+  DMClassName = 'TnFpaDMCargo'
+  EhVariavel = True
+  NaoIgnorarLookup = False
+  Separador = ';'
+  SeparadorDecimal = ','
+  SohExportarSeTiverDetalhe = False
+  TamanhoRegistro = 189
+  Indice = 'CODIGOCARGO'
+  object TnCursorLayoutField
+    FieldName = 'CODIGOCARGO'
+    PosicaoInicio = 2
+    Tamanho = 7
+    Precisao = 0
+    Coluna = 2
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'DATAINICIAL'
+    PosicaoInicio = 9
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 3
+    Tipo = itValorFixo
+    ValorFixo = '01/01/1900'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DESCRCARGO'
+    PosicaoInicio = 19
+    Tamanho = 100
+    Precisao = 0
+    Coluna = 4
+    Tipo = itValorFixo
+    ValorFixo = 'Diretor Geral'
+  end
+  object TnCursorLayoutField
+    FieldName = 'FUNCAOPPP'
+    PosicaoInicio = 119
+    Tamanho = 30
+    Precisao = 0
+    Coluna = 5
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CBO'
+    PosicaoInicio = 149
+    Tamanho = 6
+    Precisao = 0
+    Coluna = 6
+    Tipo = itValorFixo
+    ValorFixo = '123105'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CBO94'
+    PosicaoInicio = 155
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 7
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOSELECAO'
+    PosicaoInicio = 160
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 8
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOCARGODOMESTICO'
+    PosicaoInicio = 165
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 9
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CARGOPUBLICO'
+    PosicaoInicio = 175
+    Tamanho = 1
+    Precisao = 0
+    Coluna = 10
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'ACUMULACARGO'
+    PosicaoInicio = 176
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 11
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CONTAGEMTEMPO'
+    PosicaoInicio = 181
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 12
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'DEDICEXC'
+    PosicaoInicio = 186
+    Tamanho = 1
+    Precisao = 0
+    Coluna = 13
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOALTERACAOESOCIAL'
+    PosicaoInicio = 187
+    Tamanho = 3
+    Precisao = 0
+    Coluna = 14
+    Tipo = itIgnorar
+  end
+end

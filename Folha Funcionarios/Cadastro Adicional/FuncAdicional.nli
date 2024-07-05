@@ -1,0 +1,100 @@
+object TnItemImportacao
+  Delimitador = #0
+  DMClassName = 'TnFpaDMFuncAdicional'
+  EhVariavel = True
+  NaoIgnorarLookup = False
+  Separador = ';'
+  SeparadorDecimal = ','
+  SohExportarSeTiverDetalhe = False
+  TamanhoRegistro = 69
+  Indice = 'CODIGOEMPRESA;CODIGOFUNCCONTR;DATAINICIAL'
+  object TnCursorLayoutField
+    FieldName = 'CODIGOEMPRESA'
+    PosicaoInicio = 2
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 1
+    Tipo = itEventoPreDefinido
+    ValorFixo = 'PESQUISARTABELA;ESTAB;INSCRFEDERAL;CODIGOEMPRESA'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOFUNCCONTR'
+    PosicaoInicio = 7
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 3
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DATAINICIAL'
+    PosicaoInicio = 17
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 2
+    Tipo = itCampo
+  end
+  object TnCursorLayoutField
+    FieldName = 'AGENTENOCIVO'
+    PosicaoInicio = 27
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 5
+    Tipo = itValorFixo
+    ValorFixo = '00'
+  end
+  object TnCursorLayoutField
+    FieldName = 'JAEXPOSTO'
+    PosicaoInicio = 29
+    Tamanho = 1
+    Precisao = 0
+    Coluna = 6
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'PERCINSALUB'
+    PosicaoInicio = 30
+    Tamanho = 8
+    Precisao = 2
+    Coluna = 7
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'PERCPERICUL'
+    PosicaoInicio = 38
+    Tamanho = 8
+    Precisao = 2
+    Coluna = 8
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'PERCINNATURA'
+    PosicaoInicio = 46
+    Tamanho = 8
+    Precisao = 2
+    Coluna = 9
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'PERCTRANSF'
+    PosicaoInicio = 54
+    Tamanho = 8
+    Precisao = 2
+    Coluna = 10
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'PERCESPEC'
+    PosicaoInicio = 62
+    Tamanho = 8
+    Precisao = 2
+    Coluna = 11
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+end

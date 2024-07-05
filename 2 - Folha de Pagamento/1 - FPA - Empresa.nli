@@ -698,7 +698,7 @@ object TnItemImportacao
     Precisao = 0
     Coluna = 80
     Tipo = itValorFixo
-    ValorFixo = '1'
+    ValorFixo = '0'
   end
   object TnCursorLayoutField
     FieldName = 'ACAOIMPORTACAOZEN'

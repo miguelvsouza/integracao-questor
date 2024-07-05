@@ -20,6 +20,7 @@ SELECT
   en.cidade_id as cidade_ibge,
   ci.uf as uf,
   unaccent(c.nome) as nome,
+  -- 16
   c.cpf as cpf,
   u.email,
   c.data_nascimento,
@@ -48,10 +49,13 @@ FROM
   LEFT JOIN clientes c ON ce.cliente_id = c.id
   LEFT JOIN usuarios u ON c.usuario_id = u.id
 WHERE
-  e.id = 7
-  AND e.regime_tributario = 1 -- Somente empresas do Simples Nacional
+  e.regime_tributario = 1 -- Somente empresas do Simples Nacional
+  AND e.id = 779
+  AND e.categoria_cliente = 1 -- Somente empresas abertas pela GxMed
+  AND e.data_abertura BETWEEN '2024-06-01'
+  AND '2024-06-30'
   AND e.deleted_at IS NULL
   AND en.deleted_at IS NULL
   AND ce.deleted_at IS NULL
   AND c.deleted_at IS NULL
-  AND u.deleted_at IS NULL
+  AND u.deleted_at IS NULL -- PegarCampoTabela;CODIGOEMPRESA;ESTAB;INSCRFEDERAL
