@@ -1,0 +1,135 @@
+object TnItemImportacao
+  Delimitador = #0
+  DMClassName = 'TnFisDMLctoFisSaiCFOP'
+  EhVariavel = True
+  NaoIgnorarLookup = False
+  Separador = ';'
+  SeparadorDecimal = '.'
+  SohExportarSeTiverDetalhe = False
+  TamanhoRegistro = 137
+  Indice = 'CODIGOEMPRESA;CHAVELCTOFISSAI;CODIGOESTAB;DATALCTOFIS;CODIGOCFOP'
+  object TnCursorLayoutField
+    FieldName = 'CODIGOEMPRESA'
+    PosicaoInicio = 2
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 2
+    Tipo = itMaster
+    ValorFixo = 'LctoFisSai.CODIGOEMPRESA'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CHAVELCTOFISSAI'
+    PosicaoInicio = 7
+    Tamanho = 11
+    Precisao = 0
+    Coluna = 3
+    Tipo = itMaster
+    ValorFixo = 'LctoFisSai.CHAVELCTOFISSAI'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOESTAB'
+    PosicaoInicio = 18
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 4
+    Tipo = itMaster
+    ValorFixo = 'LctoFisSai.CODIGOESTAB'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DATALCTOFIS'
+    PosicaoInicio = 18
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 5
+    Tipo = itMaster
+    ValorFixo = 'LctoFisSai.DATALCTOFIS'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOCFOP'
+    PosicaoInicio = 18
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 6
+    Tipo = itValorFixo
+    ValorFixo = '9.000.001'
+  end
+  object TnCursorLayoutField
+    FieldName = 'TIPOIMPOSTO'
+    PosicaoInicio = 28
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 7
+    Tipo = itValorFixo
+    ValorFixo = '2'
+  end
+  object TnCursorLayoutField
+    FieldName = 'VALORCONTABILIMPOSTO'
+    PosicaoInicio = 30
+    Tamanho = 16
+    Precisao = 2
+    Coluna = 8
+    Tipo = itMaster
+    ValorFixo = 'LctoFisSai.VALORCONTABIL'
+  end
+  object TnCursorLayoutField
+    FieldName = 'BASECALCULOIMPOSTO'
+    PosicaoInicio = 46
+    Tamanho = 16
+    Precisao = 2
+    Coluna = 9
+    Tipo = itMaster
+    ValorFixo = 'LctoFisSai.VALORCONTABIL'
+  end
+  object TnCursorLayoutField
+    FieldName = 'ALIQIMPOSTO'
+    PosicaoInicio = 62
+    Tamanho = 7
+    Precisao = 2
+    Coluna = 5
+    Tipo = itCampo
+  end
+  object TnCursorLayoutField
+    FieldName = 'VALORIMPOSTO'
+    PosicaoInicio = 69
+    Tamanho = 16
+    Precisao = 2
+    Coluna = 6
+    Tipo = itCampo
+  end
+  object TnCursorLayoutField
+    FieldName = 'ISENTASIMPOSTO'
+    PosicaoInicio = 85
+    Tamanho = 16
+    Precisao = 2
+    Coluna = 12
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'OUTRASIMPOSTO'
+    PosicaoInicio = 101
+    Tamanho = 16
+    Precisao = 2
+    Coluna = 17
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'VALOREXVALORADICIONAL'
+    PosicaoInicio = 117
+    Tamanho = 16
+    Precisao = 2
+    Coluna = 14
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOTABCTBFIS'
+    PosicaoInicio = 133
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 15
+    Tipo = itValorFixo
+    ValorFixo = '224'
+  end
+end

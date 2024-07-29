@@ -1,0 +1,462 @@
+object TnItemImportacao
+  Delimitador = #0
+  DMClassName = 'TnFisDMLctoFisSai'
+  EhVariavel = True
+  NaoIgnorarLookup = False
+  Separador = ';'
+  SeparadorDecimal = '.'
+  SohExportarSeTiverDetalhe = False
+  TamanhoRegistro = 2535
+  Indice = 'CODIGOEMPRESA;CHAVELCTOFISSAI'
+  object TnCursorLayoutField
+    FieldName = 'CODIGOEMPRESA'
+    PosicaoInicio = 2
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 7
+    Tipo = itEventoPreDefinido
+    ValorFixo = 'PegarCampoTabela;CODIGOEMPRESA;ESTAB;INSCRFEDERAL'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CHAVELCTOFISSAI'
+    PosicaoInicio = 7
+    Tamanho = 11
+    Precisao = 0
+    Coluna = 3
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOESTAB'
+    PosicaoInicio = 18
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 7
+    Tipo = itEventoPreDefinido
+    ValorFixo = 'PegarCampoTabela;CODIGOESTAB;ESTAB;INSCRFEDERAL'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOPESSOA'
+    PosicaoInicio = 23
+    Tamanho = 9
+    Precisao = 0
+    Coluna = 1
+    Tipo = itEventoPreDefinido
+    ValorFixo = 'PegarCampoTabela;CODIGOPESSOA;PESSOA;INSCRFEDERAL'
+  end
+  object TnCursorLayoutField
+    FieldName = 'NUMERONF'
+    PosicaoInicio = 32
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 2
+    Tipo = itCampo
+  end
+  object TnCursorLayoutField
+    FieldName = 'NUMERONFFINAL'
+    PosicaoInicio = 42
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 2
+    Tipo = itCampo
+  end
+  object TnCursorLayoutField
+    FieldName = 'ESPECIENF'
+    PosicaoInicio = 52
+    Tamanho = 8
+    Precisao = 0
+    Coluna = 8
+    Tipo = itValorFixo
+    ValorFixo = 'NFSE'
+  end
+  object TnCursorLayoutField
+    FieldName = 'SERIENF'
+    PosicaoInicio = 60
+    Tamanho = 4
+    Precisao = 0
+    Coluna = 9
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'SUBSERIENF'
+    PosicaoInicio = 64
+    Tamanho = 3
+    Precisao = 0
+    Coluna = 10
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'DATALCTOFIS'
+    PosicaoInicio = 67
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 3
+    Tipo = itCampo
+  end
+  object TnCursorLayoutField
+    FieldName = 'DATAPRESTACAOSERVICO'
+    PosicaoInicio = 77
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 3
+    Tipo = itCampo
+  end
+  object TnCursorLayoutField
+    FieldName = 'VALORCONTABIL'
+    PosicaoInicio = 87
+    Tamanho = 16
+    Precisao = 2
+    Coluna = 4
+    Tipo = itCampo
+  end
+  object TnCursorLayoutField
+    FieldName = 'BASECALCULOIPI'
+    PosicaoInicio = 103
+    Tamanho = 16
+    Precisao = 2
+    Coluna = 14
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'VALORIPI'
+    PosicaoInicio = 119
+    Tamanho = 16
+    Precisao = 2
+    Coluna = 15
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'ISENTASIPI'
+    PosicaoInicio = 135
+    Tamanho = 16
+    Precisao = 2
+    Coluna = 16
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'OUTRASIPI'
+    PosicaoInicio = 151
+    Tamanho = 16
+    Precisao = 2
+    Coluna = 17
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CDMODELO'
+    PosicaoInicio = 167
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 18
+    Tipo = itValorFixo
+    ValorFixo = '99'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOESTABSCP'
+    PosicaoInicio = 169
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 19
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOTIPODCTOSINTEGRA'
+    PosicaoInicio = 174
+    Tamanho = 3
+    Precisao = 0
+    Coluna = 20
+    Tipo = itValorFixo
+    ValorFixo = '99'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOSAT'
+    PosicaoInicio = 177
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 21
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CHAVENFESAI'
+    PosicaoInicio = 182
+    Tamanho = 44
+    Precisao = 0
+    Coluna = 22
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CHAVENFESAIREF'
+    PosicaoInicio = 226
+    Tamanho = 44
+    Precisao = 0
+    Coluna = 23
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOHISTFIS'
+    PosicaoInicio = 270
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 24
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'COMPLHIST'
+    PosicaoInicio = 275
+    Tamanho = 2000
+    Precisao = 0
+    Coluna = 25
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'VLRDESC'
+    PosicaoInicio = 2275
+    Tamanho = 17
+    Precisao = 2
+    Coluna = 26
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'VLRABATNTRIB'
+    PosicaoInicio = 2292
+    Tamanho = 17
+    Precisao = 2
+    Coluna = 27
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'VLRFRETE'
+    PosicaoInicio = 2309
+    Tamanho = 17
+    Precisao = 2
+    Coluna = 28
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'VLRPEDAGIO'
+    PosicaoInicio = 2326
+    Tamanho = 17
+    Precisao = 2
+    Coluna = 29
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'VLRSEGURO'
+    PosicaoInicio = 2343
+    Tamanho = 17
+    Precisao = 2
+    Coluna = 30
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'VLROUTRDESP'
+    PosicaoInicio = 2360
+    Tamanho = 17
+    Precisao = 2
+    Coluna = 31
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'ACRESCIMOFINANCEIRO'
+    PosicaoInicio = 2377
+    Tamanho = 16
+    Precisao = 2
+    Coluna = 32
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CONTRIBUINTE'
+    PosicaoInicio = 2393
+    Tamanho = 1
+    Precisao = 0
+    Coluna = 33
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'EMITENTENF'
+    PosicaoInicio = 2394
+    Tamanho = 1
+    Precisao = 0
+    Coluna = 34
+    Tipo = itValorFixo
+    ValorFixo = 'P'
+  end
+  object TnCursorLayoutField
+    FieldName = 'FINALIDADEOPERACAO'
+    PosicaoInicio = 2395
+    Tamanho = 1
+    Precisao = 0
+    Coluna = 35
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'INDICADORPRESENCA'
+    PosicaoInicio = 2396
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 36
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'INDPAGTO'
+    PosicaoInicio = 2401
+    Tamanho = 1
+    Precisao = 0
+    Coluna = 37
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'MEIOPAGAMENTO'
+    PosicaoInicio = 2402
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 38
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
+    FieldName = 'MODALIDADEFRETE'
+    PosicaoInicio = 2407
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 39
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CDSITUACAO'
+    PosicaoInicio = 2409
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 40
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'IDSYN'
+    PosicaoInicio = 2414
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 41
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'SIGLAESTADOORIGEM'
+    PosicaoInicio = 2424
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 42
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOMUNICORIGEM'
+    PosicaoInicio = 2426
+    Tamanho = 8
+    Precisao = 0
+    Coluna = 43
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'SIGLAESTADODESTINO'
+    PosicaoInicio = 2434
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 44
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOMUNICDESTINO'
+    PosicaoInicio = 2436
+    Tamanho = 8
+    Precisao = 0
+    Coluna = 45
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'VERSAONFE'
+    PosicaoInicio = 2444
+    Tamanho = 4
+    Precisao = 0
+    Coluna = 46
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CANCELADA'
+    PosicaoInicio = 2448
+    Tamanho = 1
+    Precisao = 0
+    Coluna = 47
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'CONCILIADA'
+    PosicaoInicio = 2449
+    Tamanho = 1
+    Precisao = 0
+    Coluna = 48
+    Tipo = itValorFixo
+    ValorFixo = '0'
+  end
+  object TnCursorLayoutField
+    FieldName = 'DESFEITONEGOCIO'
+    PosicaoInicio = 2450
+    Tamanho = 1
+    Precisao = 0
+    Coluna = 49
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'ADICIONALISS'
+    PosicaoInicio = 2451
+    Tamanho = 50
+    Precisao = 0
+    Coluna = 50
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOREDUCAOZ'
+    PosicaoInicio = 2501
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 51
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CODIGOUSUARIO'
+    PosicaoInicio = 2511
+    Tamanho = 5
+    Precisao = 0
+    Coluna = 52
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'DATAHORALCTOFIS'
+    PosicaoInicio = 2511
+    Tamanho = 19
+    Precisao = 0
+    Coluna = 53
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'CHAVEORIGEM'
+    PosicaoInicio = 2511
+    Tamanho = 25
+    Precisao = 0
+    Coluna = 54
+    Tipo = itIgnorar
+  end
+  object TnCursorLayoutField
+    FieldName = 'ORIGEMDADO'
+    PosicaoInicio = 2536
+    Tamanho = 2
+    Precisao = 0
+    Coluna = 55
+    Tipo = itIgnorar
+  end
+end
