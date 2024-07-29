@@ -172,7 +172,7 @@ object TnItemImportacao
     PosicaoInicio = 83
     Tamanho = 8
     Precisao = 0
-    Coluna = 20
+    Coluna = 3
     Tipo = itEventoPreDefinido
     ValorFixo = 'PegarCampoTabela;CODIGOEMPRESA;ESTAB;INSCRFEDERAL'
   end

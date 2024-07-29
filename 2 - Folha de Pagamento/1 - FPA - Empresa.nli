@@ -528,6 +528,15 @@ object TnItemImportacao
     ValorFixo = '1'
   end
   object TnCursorLayoutField
+    FieldName = 'FORMAGERACAOFGTS'
+    PosicaoInicio = 246
+    Tamanho = 10
+    Precisao = 0
+    Coluna = 61
+    Tipo = itValorFixo
+    ValorFixo = '1'
+  end
+  object TnCursorLayoutField
     FieldName = 'PERCPIS'
     PosicaoInicio = 246
     Tamanho = 7
