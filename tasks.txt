@@ -1,4 +1,4 @@
-[ X ] - Revisar importação de cadastros
+[ X ] - Revisar importação de cadastros das empresas
 [ X ] - Configurar layout para importação de Tomadores
 [ X ] - Criar query para listar dados dos tomadores a serem importados
   - Listar apenas tomadores que não estão na Questor ainda. Melhoria: iremos inserir um campo id_questor para os tomadores.
@@ -9,4 +9,5 @@
 [ X ] - Testar importação de notas fiscais
 [ X ] - Testar importação de cadastro de tomadores
 [ X ] - Configurar o arquivo de importação manual para buscar o campo ID_APP_GX ao invés do campo NUMERO_NF
+
 [ ] - Revisar layouts de importação do cadastro de admissão na Folha de Pagamento
