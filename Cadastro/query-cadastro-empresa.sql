@@ -50,7 +50,6 @@ FROM
   LEFT JOIN usuarios u ON c.usuario_id = u.id
 WHERE
   e.regime_tributario = 1 -- Somente empresas do Simples Nacional
-  AND e.id IN (1032, 1033)
   AND e.categoria_cliente = 1 -- Somente empresas abertas pela GxMed
   AND e.data_abertura BETWEEN '2024-07-01'
   AND '2024-07-31'
