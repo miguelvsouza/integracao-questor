@@ -12,6 +12,7 @@ FROM
   LEFT JOIN tomadores t ON nf.tomador_id = t.id
 WHERE
   nf.data_emissao::date BETWEEN '2024-07-01' AND '2024-07-31' -- Apenas notas fiscais emitidas em Julho/2024
+  AND nf.numero_nfse IS NOT NULL -- Apenas notas fiscais que possuem número cadastrado
   AND nf.situacao IN ('CONCLUIDO', 'NOTA INTERNA DIGITADA') -- Apenas notas ativas
   AND nf.retem_iss = false -- Garante que não existam notas fiscais com retenção de ISS
 	AND (nf.aliquota_ir + nf.aliquota_csll + nf.aliquota_pis + nf.aliquota_cofins + nf.aliquota_inss) = 0 -- Garante que não existam notas com retenção de impostos federais
